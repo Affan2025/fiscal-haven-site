@@ -1,26 +1,36 @@
-import { Calculator, ChartBar, Shield, Users } from "lucide-react";
+import { Calculator, FileCheck, Receipt, LineChart, Briefcase, Building } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
-    title: "Tax Planning & Preparation",
-    description: "Strategic tax planning and accurate preparation services for businesses and individuals.",
+    title: "Accounting and Bookkeeping",
+    description: "Comprehensive accounting solutions including daily bookkeeping, financial statements preparation, and management reporting.",
     icon: Calculator,
   },
   {
-    title: "Financial Analysis",
-    description: "In-depth analysis of your financial data to drive better business decisions.",
-    icon: ChartBar,
+    title: "Audit and Assurance",
+    description: "Independent audit services ensuring compliance and providing stakeholders with reliable financial information.",
+    icon: FileCheck,
   },
   {
-    title: "Payroll Services",
-    description: "Comprehensive payroll management and compliance services.",
-    icon: Users,
+    title: "VAT Consultancy",
+    description: "Expert guidance on VAT registration, compliance, returns filing, and strategic planning for optimal tax efficiency.",
+    icon: Receipt,
   },
   {
-    title: "Audit & Assurance",
-    description: "Professional audit services to ensure financial accuracy and compliance.",
-    icon: Shield,
+    title: "Corporate Tax Advisory",
+    description: "Strategic tax planning and compliance services to help businesses navigate complex tax regulations.",
+    icon: LineChart,
+  },
+  {
+    title: "CFO Services and Business Performance Review",
+    description: "Professional financial leadership and strategic analysis to drive business growth and optimization.",
+    icon: Briefcase,
+  },
+  {
+    title: "Business Setup and Liquidation",
+    description: "End-to-end support for business establishment and closure processes in UAE and UK markets.",
+    icon: Building,
   },
 ];
 
@@ -36,7 +46,7 @@ export const Services = () => {
             Comprehensive financial solutions tailored to your business needs
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card 
               key={service.title} 
