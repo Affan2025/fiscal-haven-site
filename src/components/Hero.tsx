@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Phone, MessageCircle } from "lucide-react";
 
 export const Hero = () => {
+  const whatsappNumber = "971545005947";
+  const phoneNumber = "+971545005947";
+
   return (
     <div className="relative bg-gradient-to-r from-[#e6e9f0] to-[#eef1f5] py-24 lg:py-32">
       <div className="container mx-auto px-4">
@@ -13,11 +17,25 @@ export const Hero = () => {
             <p className="text-lg lg:text-xl mb-8 text-gray-600">
               Expert accounting solutions designed to help your business thrive. We handle the numbers, so you can focus on growth.
             </p>
-            <Link to="/contact">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-                Get Started
-              </Button>
-            </Link>
+            <div className="flex gap-4 flex-wrap">
+              <Link to="/contact">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                  Get Started
+                </Button>
+              </Link>
+              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="gap-2">
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp Us
+                </Button>
+              </a>
+              <a href={`tel:${phoneNumber}`}>
+                <Button size="lg" variant="outline" className="gap-2">
+                  <Phone className="w-5 h-5" />
+                  Call Us
+                </Button>
+              </a>
+            </div>
           </div>
           <div className="lg:w-1/2 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-400/20 rounded-2xl blur-3xl"></div>
