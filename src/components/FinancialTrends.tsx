@@ -3,8 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const fetchMarketData = async () => {
-  // In a real implementation, this would fetch from a financial API
-  // For now using dummy data that's more realistic
   return {
     forex: {
       'USD/AED': { rate: 3.67, history: generateDummyHistory(3.67) },
@@ -13,7 +11,7 @@ const fetchMarketData = async () => {
       'JPY/USD': { rate: 0.0067, history: generateDummyHistory(0.0067) }
     },
     crypto: {
-      'BTC/USD': { rate: 67234.50, history: generateDummyHistory(67234.50) },
+      'BTC/USD': { rate: 95000.00, history: generateDummyHistory(95000.00) },
       'ETH/USD': { rate: 3521.75, history: generateDummyHistory(3521.75) },
       'SOL/USD': { rate: 184.32, history: generateDummyHistory(184.32) },
       'BNB/USD': { rate: 567.89, history: generateDummyHistory(567.89) },
@@ -23,7 +21,8 @@ const fetchMarketData = async () => {
       'DFMGI': { value: 4183.23, history: generateDummyHistory(4183.23) },
       'ADX': { value: 9847.12, history: generateDummyHistory(9847.12) },
       'S&P500': { value: 5234.84, history: generateDummyHistory(5234.84) },
-      'NASDAQ': { value: 16325.45, history: generateDummyHistory(16325.45) }
+      'NASDAQ': { value: 16325.45, history: generateDummyHistory(16325.45) },
+      'FTSE100': { value: 7687.32, history: generateDummyHistory(7687.32) }
     },
     commodities: {
       'GOLD': { value: 2023.50, history: generateDummyHistory(2023.50) }

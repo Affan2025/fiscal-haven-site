@@ -1,5 +1,4 @@
 import { Hero } from "@/components/Hero";
-import { Services } from "@/components/Services";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { ContactForm } from "@/components/ContactForm";
 import { NewsTicker } from "@/components/NewsTicker";
@@ -20,7 +19,6 @@ const Index = () => {
         </h2>
         <FinancialTrends />
       </div>
-      <Services />
       <MissionVision />
       <div className="container mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">

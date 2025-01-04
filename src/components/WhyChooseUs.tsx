@@ -2,7 +2,7 @@ import { Award, Clock, HeartHandshake, Zap, Users, MessageSquare } from "lucide-
 
 const reasons = [
   {
-    title: "25+ Years of Experience",
+    title: "12+ Years of Experience",
     description: "Decades of expertise serving businesses across various industries.",
     icon: Award,
   },

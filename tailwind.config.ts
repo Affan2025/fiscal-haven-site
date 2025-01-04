@@ -25,11 +25,11 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#1e3a8a",
+          DEFAULT: "#0E2356", // PWC-style dark blue
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#64748b",
+          DEFAULT: "#D04A02", // PWC-style orange for accents
           foreground: "#ffffff",
         },
         destructive: {
@@ -41,8 +41,8 @@ export default {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#E0301E", // PWC-style red for special elements
+          foreground: "#ffffff",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
