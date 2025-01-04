@@ -1,4 +1,4 @@
-import { Award, Clock, HeartHandshake } from "lucide-react";
+import { Award, Clock, HeartHandshake, Zap, Users, MessageSquare } from "lucide-react";
 
 const reasons = [
   {
@@ -16,6 +16,21 @@ const reasons = [
     description: "Tailored solutions that match your specific business requirements.",
     icon: HeartHandshake,
   },
+  {
+    title: "Quick Turnaround Time",
+    description: "Fast and efficient service delivery for all your requests.",
+    icon: Zap,
+  },
+  {
+    title: "Dedicated Account Manager",
+    description: "A single point of contact for all your queries and needs.",
+    icon: Users,
+  },
+  {
+    title: "Real-time Support",
+    description: "Instant responses and solutions through WhatsApp and phone.",
+    icon: MessageSquare,
+  },
 ];
 
 export const WhyChooseUs = () => {
@@ -24,13 +39,13 @@ export const WhyChooseUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent mb-4">
-            Why Choose Us
+            Why Choose SA Global
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Join thousands of satisfied clients who trust us with their financial success
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {reasons.map((reason, index) => (
             <div
               key={reason.title}
