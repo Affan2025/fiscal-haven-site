@@ -75,7 +75,9 @@ export const FinancialTrends = () => {
         <h3 className="text-xl font-semibold mb-4">Forex Markets</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {Object.entries(marketData.forex).map(([pair, data]) => (
-            renderMarketCard(pair, data.rate, data.history)
+            <div key={pair}>
+              {renderMarketCard(pair, data.rate, data.history)}
+            </div>
           ))}
         </div>
       </div>
@@ -84,7 +86,9 @@ export const FinancialTrends = () => {
         <h3 className="text-xl font-semibold mb-4">Cryptocurrency Markets</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {Object.entries(marketData.crypto).map(([pair, data]) => (
-            renderMarketCard(pair, data.rate, data.history, '$')
+            <div key={pair}>
+              {renderMarketCard(pair, data.rate, data.history, '$')}
+            </div>
           ))}
         </div>
       </div>
@@ -93,7 +97,9 @@ export const FinancialTrends = () => {
         <h3 className="text-xl font-semibold mb-4">Stock Markets</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {Object.entries(marketData.stocks).map(([index, data]) => (
-            renderMarketCard(index, data.value, data.history)
+            <div key={index}>
+              {renderMarketCard(index, data.value, data.history)}
+            </div>
           ))}
         </div>
       </div>
@@ -102,7 +108,9 @@ export const FinancialTrends = () => {
         <h3 className="text-xl font-semibold mb-4">Commodities</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {Object.entries(marketData.commodities).map(([commodity, data]) => (
-            renderMarketCard(`${commodity} (USD/oz)`, data.value, data.history, '$')
+            <div key={commodity}>
+              {renderMarketCard(`${commodity} (USD/oz)`, data.value, data.history, '$')}
+            </div>
           ))}
         </div>
       </div>
