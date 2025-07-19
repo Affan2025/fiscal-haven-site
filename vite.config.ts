@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // Add base path for GitHub Pages deployment
-  base: mode === 'production' ? '/your-repo-name/' : '/',
+  base: mode === 'production' ? '/fiscal-haven-site/' : '/',
 }));
