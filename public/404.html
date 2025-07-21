@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <title>Fiscal Haven</title>
     <script type="text/javascript">
-      // GitHub Pages SPA redirect for fiscal-haven-site
-      var pathSegmentsToKeep = 1;
+      // Redirect to hash route for GitHub Pages SPA
       var l = window.location;
       var redirect = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + 
-        '/fiscal-haven-site/#' + l.pathname.slice('/fiscal-haven-site'.length);
+        '/fiscal-haven-site/#' + l.pathname.slice('/fiscal-haven-site/'.length);
       l.replace(redirect);
     </script>
   </head>
