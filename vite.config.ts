@@ -19,6 +19,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Add base path for GitHub Pages deployment
-  base: mode === 'production' ? '/fiscal-haven-site/' : '/',
+  // Base path: root for custom domain, repo path for github.io
+  base: '/',
 }));
