@@ -19,6 +19,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Base path: root for custom domain, repo path for github.io
+  // Base path: root for custom domain (www.sagasltd.com)
   base: '/',
 }));
