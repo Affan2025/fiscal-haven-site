@@ -1,0 +1,30 @@
+name: Deploy Vite app to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # This will run the deployment on any push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # You can change this to the version of Node.js your project needs
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the app
+        run: npm run build  # This will run the Vite build command to generate the static files
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # The branch where the compiled files will be deployed
+          folder: dist  # The folder that contains the compiled files after the build
